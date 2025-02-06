@@ -13,7 +13,10 @@ Ensure the following files are in the root directory of your project:
 ## Running the Project
 
 To view the project locally, start a simple HTTP server. You can use any simple HTTP server; here, we use `http-server` as an example:
-
+**note** : ``` to just run :
+            npm install
+            npm start or node server.js
+            ```
 1. **Install `http-server`:**
 
     ```sh
