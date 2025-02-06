@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kluster.ai Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Chat History</h2>
+        <div id="chatList"></div>
+        <button onclick="newChat()" class="new-chat-button">New Message</button>
+        <button onclick="setUsername()" class="new-chat-button">Set Username</button>
+        <button onclick="setApiKey()" class="new-chat-button">Set API Key</button>
+    </div>
+    <div class="chat-container">
+        <div id="modelSelection" class="model-selection">
+            <label for="modelSelect">Choose a model:</label>
+            <select id="modelSelect">
+                <option value="klusterai/Meta-Llama-3.1-8B-Instruct-Turbo">klusterai/Meta-Llama-3.1-8B-Instruct-Turbo</option>
+                <option value="klusterai/Meta-Llama-3.1-405B-Instruct-Turbo">klusterai/Meta-Llama-3.1-405B-Instruct-Turbo</option>
+                <option value="klusterai/Meta-Llama-3.3-70B-Instruct-Turbo">klusterai/Meta-Llama-3.3-70B-Instruct-Turbo</option>
+                <option value="deepseek-ai/DeepSeek-R1">deepseek-ai/DeepSeek-R1</option>
+            </select>
+            <button onclick="selectModel()" class="start-chat-button">Start Chat</button>
+        </div>
+        <div id="activeModel" class="active-model"></div>
+        <div class="chat-history" id="chatHistory"></div>
+        <textarea id="userInput" rows="4" placeholder="Type your message here..."></textarea>
+        <button onclick="sendMessage()" class="send-button">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

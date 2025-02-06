@@ -1,0 +1,196 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #0f0;
+}
+
+.sidebar {
+    width: 300px;
+    border-right: 1px solid #0f0;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #000;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    color: #0f0;
+}
+
+.new-chat-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #0f0;
+    border: 1px solid #0f0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.new-chat-button:hover {
+    background-color: #0f0;
+    color: #000;
+}
+
+.chat-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.model-selection {
+    margin-bottom: 20px;
+}
+
+.model-selection label {
+    font-weight: bold;
+    color: #0f0;
+}
+
+.model-selection select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0f0;
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.start-chat-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #0f0;
+    border: 1px solid #0f0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.start-chat-button:hover {
+    background-color: #0f0;
+    color: #000;
+}
+
+.active-model {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0f0;
+}
+
+.chat-history {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #000;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+}
+
+.chat-entry {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #000;
+    border: 1px solid #0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0f0;
+    background-color: #000;
+    color: #0f0;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    resize: none;
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #0f0;
+    border: 1px solid #0f0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send-button:hover {
+    background-color: #0f0;
+    color: #000;
+}
+
+.code-block {
+    position: relative;
+    background-color: #000;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0f0;
+}
+
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #0f0;
+    border: none;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    text-decoration: underline;
+}
+
+.rename-input {
+    width: calc(100% - 80px);
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #0f0;
+    background-color: #000;
+    color: #0f0;
+}
+
+.chat-entry button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #0f0;
+    border: 1px solid #0f0;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.chat-entry button:hover {
+    background-color: #0f0;
+    color: #000;
+}
+
+pre {
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    border: 1px solid #0f0;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #0f0;
+}
