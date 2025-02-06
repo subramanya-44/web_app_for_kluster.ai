@@ -70,13 +70,10 @@ For more information, visit [Kluster AI](https://www.kluster.ai/).
 
 ## Screenshots
 
-![Screenshot 1]screenshot1.png)
+![Screenshot 1](screenshot1.png)
 *Description of Screenshot 1*
 
-![Screenshot 2](screenshot2.png)
-*Description of Screenshot 2*
 
-*Replace `path/to/screenshot1.png` and `path/to/screenshot2.png` with the actual paths to your images.*
 
 ## License
 
